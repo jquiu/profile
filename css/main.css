@@ -1,0 +1,276 @@
+/*$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1060px
+);*/
+
+/* Buttons */
+
+/* Inputs */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.site-title {
+  font-size: 1.35rem;
+  line-height: 2.5rem;
+}
+
+.nav-link {
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-link:hover, .nav-link:focus, .active .nav-link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-item+.nav-item {
+  margin-left: 1rem;
+}
+
+.intro-title {
+  font-weight: 700;
+}
+
+.container-narrow {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+img.avatar {
+  border-radius: 50%;
+}
+
+footer a:not(.nav-link) {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 48em) {
+  .site-title {
+    float: left;
+  }
+  .site-nav {
+    float: right;
+  }
+}
+
+.marker {
+  position: relative;
+  display: inline;
+  width: auto;
+}
+
+.marker-center {
+  padding-right: 0;
+}
+
+.marker:after {
+  content: "";
+  width: 125px;
+  height: 30px;
+  position: absolute;
+  bottom: -25px;
+  right: -30px;
+  background-image: url("../images/marker.svg");
+  background-repeat: no-repeat;
+}
+
+.marker-center:after {
+  bottom: -30px;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Grid Item */
+
+.grid-sizer, .grid-item {
+  width: 100%;
+}
+
+.grid-item {
+  padding-bottom: 12px;
+}
+
+@media (min-width: 48em) {
+  .grid-sizer, .grid-item {
+    width: 25%;
+  }
+  .grid-item {
+    float: left;
+    padding: 6px;
+  }
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Portfolio */
+
+.portolio-section .container {
+  padding: 0;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+}
+
+.portfolio-item figcaption {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.75);
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0);
+}
+
+.portfolio-item figcaption h4 {
+  color: #222;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.portfolio-item figcaption p {
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.portfolio-item:hover figcaption {
+  transform: translate3d(0, 0, 0);
+}
+
+.espacio {
+  height: 100%;
+}
+
+.layer p {
+  position: relative;
+  box-shadow: 0 32px 40px -20px rgba(0, 0, 0, .25);
+  border-radius: 50%;
+}
+
+.layer:nth-child(1) p {
+  width: 20px;
+  height: 20px;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 200px);
+  background: red;
+}
+
+.layer:nth-child(2) p {
+  width: 20px;
+  height: 20px;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 200px);
+  background: #EAF2E3;
+}
+
+.layer:nth-child(3) p {
+  width: 30px;
+  height: 30px;
+  top: calc(50vh - 170px);
+  left: calc(50vw - 230px);
+  background: #66D7D1;
+}
+
+.layer:nth-child(4) p {
+  width: 30px;
+  height: 30px;
+  top: calc(50vh - 300px);
+  left: calc(50vw + 25px);
+  background: #F4F1BB;
+}
+
+.layer:nth-child(5) p {
+  width: 20px;
+  height: 20px;
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px);
+  background: #FF637D;
+}
+
+.layer:nth-child(6) p {
+  width: 5px;
+  height: 5px;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 200px);
+  background: #caebae;
+}
+
+.layer:nth-child(7) p {
+  width: 10px;
+  height: 10px;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 200px);
+  background: #EAF2E3;
+}
+
+.layer:nth-child(8) p {
+  width: 23px;
+  height: 23px;
+  top: calc(50vh - 170px);
+  left: calc(50vw - 230px);
+  background: #66D7D1;
+}
+
+.layer:nth-child(9) p {
+  width: 15px;
+  height: 15px;
+  top: calc(50vh - 300px);
+  left: calc(50vw + 25px);
+  background: #F4F1BB;
+}
+
+.layer:nth-child(10) p {
+  width: 10px;
+  height: 10px;
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px);
+  background: #FF637D;
+}
+
+.cover {
+  border-bottom: 1px dashed #f7e05e;
+  z-index: 1;
+}
+
+
+.contant-section  {
+  padding-top: 50px;
+  border-top: 1px dashed #f7e05e;
+}
+
+
+#js-scene{
+  z-index: -1;
+}
